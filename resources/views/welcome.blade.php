@@ -25,7 +25,7 @@
     <body>
      <div class="links">
                     <a class="hvr-grow" href="{{ url('/add') }}">Add A Meal</a>
-                   <a class="hvr-grow" href="{{ url('/') }}">Home</a>
+                   <a class="hvr-grow" href="{{ url('/home') }}">Home</a>
                     
                 </div>
                 <br>
@@ -56,7 +56,7 @@
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
                         <div id="login" class="animate form">
-                            <form  action="mysuperscript.php" autocomplete="on"> 
+                            <form  action="send" method="post" id="send" autocomplete="on"> 
                                 <h1>Log in</h1> 
                                 <p> 
                                     <label for="username" class="uname" data-icon="u" > Your email</label>
@@ -77,16 +77,14 @@
                                     Not a member yet ?
                                     <a href="#toregister" class="to_register">Join us</a>
                                 </p>
+                                </ul>
+                                <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
                             </form>
                         </div>
 
                         <div id="register" class="animate form">
-                            <form  action="mysuperscript.php" autocomplete="on"> 
+                            <form  action="send" method="post" id="send" autocomplete="on"> 
                                 <h1> Sign up </h1> 
-                                <!-- <p> 
-                                    <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
-                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
-                                </p> -->
                                 <p> 
                                     <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
                                     <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
@@ -106,6 +104,8 @@
                                     Already a member ?
                                     <a href="#tologin" class="to_register"> Go and log in </a>
                                 </p>
+                                </ul>
+                                <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
                             </form>
                         </div>
                         

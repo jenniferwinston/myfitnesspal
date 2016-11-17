@@ -76,3 +76,32 @@
             transform: scale(1.1);
         }
 
+
+
+ .homebkg {
+    width: 50%; 
+    margin-top: 25px;   
+    margin-left:auto;
+   margin-right:auto;
+    padding: 11px 6% 30px 6%;
+    background: rgba(255,255,255,0.8);;
+    border: 1px solid orange;
+    -webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),  0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+       -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),  0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+            box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),  0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+    -webkit-box-shadow: 5px;
+    -moz-border-radius: 5px;
+         border-radius: 5px;
+ }       
+
+.recentTitle {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.mealInput {
+    width: 35%;
+    font-size: 20px;
+}
