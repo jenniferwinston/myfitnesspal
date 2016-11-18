@@ -34,6 +34,9 @@
     <div class="homebkg">
         <div class="recentTitle">Your Recent Meals</div>
         <hr><br>
+        <div class="recentContent">
+            Five Guys Cheeseburger
+        </div>    
 
     </div>
 
