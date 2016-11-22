@@ -25,19 +25,8 @@ Route::get('/add', function () {
     return view('add');
 });
 
-// Route::get('', function () {
-//     $site_title = 'Laravel 5';
-//     return view('welcome', compact('site_title'));
-// });
+Route::get('/list', 'AteController@ateList');
 
-// Route::get('/contact', function () {
-//     $site_title = 'Laravel 5';
-//     return view('contact', compact('site_title'));
-// });
-
-// Route::post('/send', function () {
-//     $site_title = 'Laravel 5';
-//     return view('send', compact('site_title'));
-// });
+Route::get('/ate/{ate}/delete', 'AteController@deleteAte');
 
 

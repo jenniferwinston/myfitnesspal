@@ -35,8 +35,12 @@
         <div class="recentTitle">Add A Meal</div>
         <hr><br>
 
-        <form action="search">
-        Your Meal: <input class="mealInput" type="text" name="meal" value=""> <input type="submit" value="Submit">
+      
+   
+
+              <form action="search">
+                Your Meal: <input class="mealInput" type="text" name="meal" value=""> <input type="submit" value="Submit">
+        @include('listed')
 
     </div>
 
